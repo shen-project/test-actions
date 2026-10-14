@@ -1,2 +1,1 @@
-# military-wargaming
-军事推演+地图空间操作
+测试一下github自带的actions操作流程
