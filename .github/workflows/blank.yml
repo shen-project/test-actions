@@ -1,0 +1,22 @@
+name: 构建并部署
+
+on:
+  push:
+    branches: [ main ]   # 只有 push 到 main 分支才触发
+
+jobs:
+  build:
+    runs-on: ubuntu-latest   # GitHub 提供的临时虚拟机
+    steps:
+      - name: 拉取代码
+        uses: actions/checkout@v4
+
+      - name: 安装 Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: 安装依赖并构建
+        run: |
+          npm install
+          npm run build
