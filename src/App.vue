@@ -10,6 +10,9 @@ import TheWelcome from './components/TheWelcome.vue'
     <div class="wrapper">
       <HelloWorld msg="You did it!" />
     </div>
+    <p>
+      这是一个 Vue 项目，用于配合展示 Jenkins 自动构建操作。
+    </p>
   </header>
 
   <main>
